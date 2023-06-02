@@ -1,0 +1,62 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+    <section style="background-color: #eee;">
+      <div class="container py-5">
+
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-8 col-lg-6 col-xl-4">
+            <div class="card" id="chat1" style="border-radius: 15px;">
+              <div
+                class="card-header d-flex justify-content-between align-items-center p-3 bg-info text-white border-bottom-0"
+                style="border-top-left-radius: 15px; border-top-right-radius: 15px;">
+                <i class="fas fa-angle-left"></i>
+                <p class="mb-0 fw-bold">Mental Health Chatbot</p>
+                <i></i>
+              </div>
+
+              <div class="card-body overflow-auto" style='height:400px;'>
+                <div class="d-flex flex-row justify-content-start mb-4">
+                  <img src="https://cdn-icons-png.flaticon.com/512/5226/5226034.png"
+                    alt="avatar 1" style="width: 45px; height: 100%;">
+                  <div class="p-3 ms-3" style="border-radius: 15px; background-color: rgba(57, 192, 237,.2);">
+                    <p class="small mb-0">Hello! How are you today?</p>
+                  </div>
+                </div>
+
+                <div class="d-flex flex-row justify-content-end mb-4">
+                  <div class="p-3 me-3 border" style="border-radius: 15px; background-color: #fbfbfb;">
+                    <p class="small mb-0">I'm doing well!</p>
+                  </div>
+                  <img src="https://cdn-icons-png.flaticon.com/512/4086/4086582.png"
+                    alt="avatar 1" style="width: 45px; height: 100%;">
+                </div>
+
+                <div class="d-flex flex-row justify-content-start mb-4">
+                  <img src="https://cdn-icons-png.flaticon.com/512/5226/5226034.png"
+                    alt="avatar 1" style="width: 45px; height: 100%;">
+                  <div class="p-3 ms-3" style="border-radius: 15px; background-color: rgba(57, 192, 237,.2);">
+                    <p class="small mb-0">That's great!</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-footer p-3">
+                <form method='POST'>
+                    <div class="d-flex flex-row">
+                      <div class="input-group">
+                        <textarea placeholder="Type your message" class="form-control" aria-describedby="button-addon2"></textarea>
+                        <a type='submit' class='mt-auto' id="button-addon2" href="#!"><i style="font-size:24px; color: #1E90FF" class="p-1 fas fa-paper-plane"></i></a>
+                      </div>
+                    </div>
+                </form>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+{% endblock %}
