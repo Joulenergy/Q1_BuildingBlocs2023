@@ -7,3 +7,6 @@ An AI web app using Flask that does mental health screening and diagnosis. :D
 - [x] Joulene
 - [x] Theo
 - [x] Ayden
+
+# How to run
+Download this repository and run flask_app.py to run the Flask app.
