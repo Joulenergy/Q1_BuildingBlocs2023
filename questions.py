@@ -239,11 +239,12 @@ def gas_7(input_sentence):
 def eat_26(input_sentence):
     qns = test["EAT-26"]["qns"]
     scoring = test["EAT-26"]["scoring"]
-    scores = score(input_sentence, qns, scoring)
+    scores = np.array(score(input_sentence, qns, scoring))-2
+    scores[scores <= 0] = 0
     print(scores)
     final_score = sum(scores[:-1]) + 3 - scores[-1]
     print(final_score)
-    if final_score > 15:
+    if final_score > 25:
         return "You are most likely suffering from an eating disorder. An eating disorder is when someone begins eating " \
                "too much, or when someone begins to avoid eating, harming their own mental and physical health. These " \
                "usually stem from having low self esteem and a poor body image, and people with eating disorders often " \

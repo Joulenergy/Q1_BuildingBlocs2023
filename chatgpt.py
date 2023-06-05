@@ -1,7 +1,7 @@
 import requests
 
 url = "https://api.openai.com/v1/chat/completions"
-api_key = "sk-iy7Oba2R8lRYZsaFquIDT3BlbkFJrkHVoptVeAQznXlBgukqre"
+api_key = "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"
 
 prompt_start = "I want you to act as a listener. The user will talk about their life and the problems that they are " \
                "facing, including but not limited to their mental health, stress, insecurities, thoughts and actions. " \

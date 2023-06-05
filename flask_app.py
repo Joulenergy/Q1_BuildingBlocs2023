@@ -27,6 +27,7 @@ def get():
         text = ""
         for i in history[::2]:
             text += i["content"] + " "
+        text = text[545:]
         print(text)
         bot_text = "I see, thanks for sharing. Here is my diagnosis:\n\n" + gas_7(text) + "\n\n" + phq_9(text)
         eat = eat_26(text)
@@ -39,7 +40,7 @@ def get():
                     "you could continue chatting with me. I can answer whatever questions you may have or give more " \
                     "advice if you want."
         history.append({"role": "assistant", "content": bot_text})
-        start = history[0]["content"][545:]
+        start = history[0]["content"]
         history[0]["content"] = prompt_start + start
     return {'bot': bot_text}
 
